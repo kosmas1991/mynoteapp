@@ -1,3 +1,14 @@
+Integrate google sign in with firebase auth code below ...
+
+![Screenshot]{SOS_googlesignin_integrate_with_firebaseauth.png}
+
+sample app photos below ...
+
+![Screenshot](screenshot1.png)
+![Screenshot](screenshot2.png)
+![Screenshot](screenshot3.png)
+![Screenshot](screenshot4.png)
+
 # mynoteapp
 
 A new Flutter application.
