@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:mynoteapp/src/google_auth.dart';
 
@@ -37,7 +36,8 @@ class LoginScreen extends StatelessWidget {
                               MaterialStateProperty.all(Colors.white),
                           shadowColor: MaterialStateProperty.all(Colors.black),
                           elevation: MaterialStateProperty.all(10.0),
-                          padding: MaterialStateProperty.all(EdgeInsets.all(15))),
+                          padding:
+                              MaterialStateProperty.all(EdgeInsets.all(15))),
                       onPressed: () {
                         //TODO: Imple the google sign in later
                         signInWithGoogle(context);

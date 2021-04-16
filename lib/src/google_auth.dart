@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -31,11 +30,15 @@ Future<bool> signInWithGoogle(BuildContext context) async {
         if (value.exists) {
           //user old
           value.reference.update(userData);
-          Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => MainScreen(),));
+          Navigator.of(context).pushReplacement(MaterialPageRoute(
+            builder: (context) => MainScreen(googleSignInAccount: googleSignInAccount,),
+          ));
         } else {
           //user new
           value.reference.set(userData);
-          Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => MainScreen(),));
+          Navigator.of(context).pushReplacement(MaterialPageRoute(
+            builder: (context) => MainScreen(googleSignInAccount: googleSignInAccount,),
+          ));
         }
       });
     }
