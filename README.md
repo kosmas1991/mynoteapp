@@ -1,6 +1,6 @@
 Integrate google sign in with firebase auth code below ...
 
-![Screenshot](SOS_googlesignin_integrate_with_firebaseauth.png)
+![Screenshot](SOS_googlesignin_integrate_with_firebaseauth.PNG)
 
 sample app photos below ...
 
